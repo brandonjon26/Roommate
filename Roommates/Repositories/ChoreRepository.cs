@@ -13,6 +13,11 @@ namespace Roommates.Repositories
             using (SqlConnection conn = connection)
 
                 conn.Open();
+
+            using (SqlCommand cmd = conn.CreateCommand());
+            {
+
+            }
         }
     }
 }
